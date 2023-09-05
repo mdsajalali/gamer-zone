@@ -11,4 +11,4 @@
 - [x] HTML
 - [x] CSS
 - [x] Google Fonts [Work-Sans]
-- [x] Icons [Ionicons]
+- [x] Icon [Ionicons]
