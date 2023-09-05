@@ -303,3 +303,121 @@ header {
     font-size: 40px;
   }
 }
+
+/* video section */
+.details {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.details h1 {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.details h1 span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.details p {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.video-card .video-img {
+  width: 300px;
+}
+
+.video-card {
+  position: relative;
+  text-align: center;
+}
+
+.video-img {
+  background: white;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  /* background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%; */
+  visibility: hidden;
+}
+
+.video-card:hover .video-overlay {
+  visibility: visible;
+}
+
+.video-play__icon img {
+  background: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.video-card .video-desc {
+  font-size: 20px;
+  font-weight: 500;
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.video-card p {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1320px) {
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .video-card p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
