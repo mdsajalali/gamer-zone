@@ -219,3 +219,87 @@ header {
     font-size: 40px;
   }
 }
+
+/* gammer information section */
+.gammer-info-container {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 13.13%,
+    rgba(255, 66, 165, 0.03) 87.94%
+  );
+}
+
+.gammer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gammer-information {
+  text-align: right;
+}
+
+.gammer-information h1 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.gammer-information p {
+  max-width: 520px;
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.gammer-btn {
+  margin-right: 0;
+}
+
+.gammer-purpose {
+  color: #534c64;
+  margin-top: 20px;
+}
+
+.gammer-purpose h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+@media screen and (max-width: 1350px) {
+  .gammer-info img {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .gammer-info {
+    flex-direction: column;
+  }
+
+  .gammer-information {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .gammer-info {
+    flex-direction: column;
+  }
+
+  .gammer-information {
+    max-width: 400px;
+  }
+
+  .gammer-info img {
+    max-width: 400px;
+  }
+
+  .gammer-information h1 {
+    font-size: 40px;
+  }
+}
