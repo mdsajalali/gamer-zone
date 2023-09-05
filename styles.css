@@ -112,24 +112,6 @@ header {
   font-weight: 600;
 }
 
-@media screen and (max-width: 750px) {
-  header {
-    box-shadow: none;
-  }
-  .header-content {
-    flex-direction: column;
-  }
-
-  .nav {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .nav a {
-    margin-top: 20px;
-  }
-}
-
 /* banner section */
 .banner {
   background-image: url(./images/banner-left-bg.png);
@@ -189,37 +171,6 @@ header {
   margin: 7px 0;
 }
 
-@media screen and (max-width: 1150px) {
-  .banner-right img {
-    max-width: 500px;
-  }
-}
-@media screen and (max-width: 950px) {
-  .banner {
-    background-image: none;
-  }
-  .banner-container {
-    flex-direction: column;
-  }
-
-  .banner-right img {
-    max-width: 400px;
-  }
-
-  .banner-left {
-    order: 1;
-    margin-top: 70px;
-    margin-bottom: 100px;
-  }
-
-  .banner-left h1 {
-    font-size: 75px;
-  }
-  .banner-left h2 {
-    font-size: 40px;
-  }
-}
-
 /* gammer information section */
 .gammer-info-container {
   background: linear-gradient(
@@ -270,38 +221,6 @@ header {
   font-size: 24px;
   font-weight: 600;
   line-height: 45px;
-}
-
-@media screen and (max-width: 1350px) {
-  .gammer-info img {
-    max-width: 600px;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .gammer-info {
-    flex-direction: column;
-  }
-
-  .gammer-information {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 650px) {
-  .gammer-info {
-    flex-direction: column;
-  }
-
-  .gammer-information {
-    max-width: 400px;
-  }
-
-  .gammer-info img {
-    max-width: 400px;
-  }
-
-  .gammer-information h1 {
-    font-size: 40px;
-  }
 }
 
 /* video section */
@@ -396,32 +315,6 @@ header {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1320px) {
-  .videos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
-  .video-card p {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .videos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .videos {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-  }
-}
-
 /* featured section */
 .featured {
   display: flex;
@@ -464,58 +357,6 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@media screen and (max-width: 1420px) {
-  .featured-img {
-    max-width: 400px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .featured-img {
-    max-width: 200px;
-  }
-}
-@media screen and (max-width: 980px) {
-  .featured {
-    flex-direction: column;
-  }
-
-  .featured-img {
-    position: relative;
-    right: 20%;
-  }
-}
-@media screen and (max-width: 825px) {
-  .featured {
-    flex-direction: column;
-  }
-
-  .featured-img-1 {
-    width: 300px;
-  }
-  .featured-img-2 {
-    width: 100px;
-  }
-
-  .featured-img {
-    margin-left: 220px;
-  }
-
-  .featured-overlay {
-    position: absolute;
-    bottom: -30px;
-    left: -50px;
-  }
-}
-@media screen and (max-width: 825px) {
-  .featured-img {
-    margin-left: 90px;
-  }
-
-  .featured-title h1 {
-    font-size: 40px;
-  }
 }
 
 /* categories section */
@@ -579,7 +420,7 @@ header {
 /* footer section */
 .footer {
   padding: 80px 10px;
-  background: #0B0223;
+  background: #0b0223;
   text-align: center;
 }
 
@@ -590,15 +431,14 @@ header {
   gap: 50px;
 }
 
- 
-.footer-logo{
+.footer-logo {
   color: #fff;
   display: flex;
   gap: 20px;
 }
 
-.footer-logo span{
-     color: #ff42a5;
+.footer-logo span {
+  color: #ff42a5;
 }
 
 .footer--menu {
@@ -618,9 +458,8 @@ header {
   -o-transition: all 0.5s ease;
 }
 
-.footer--menu--link:hover{
-     color: #ff42a5;
-
+.footer--menu--link:hover {
+  color: #ff42a5;
 }
 
 .footer--social {
@@ -651,4 +490,164 @@ header {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 30px;
   line-height: 1.6;
+}
+
+/* responsive section */
+@media screen and (max-width: 750px) {
+  header {
+    box-shadow: none;
+  }
+  .header-content {
+    flex-direction: column;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav a {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .banner-right img {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .banner {
+    background-image: none;
+  }
+  .banner-container {
+    flex-direction: column;
+  }
+
+  .banner-right img {
+    max-width: 400px;
+  }
+
+  .banner-left {
+    order: 1;
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+
+  .banner-left h1 {
+    font-size: 75px;
+  }
+  .banner-left h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .gammer-info img {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .gammer-info {
+    flex-direction: column;
+  }
+
+  .gammer-information {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 650px) {
+  .gammer-info {
+    flex-direction: column;
+  }
+
+  .gammer-information {
+    max-width: 400px;
+  }
+
+  .gammer-info img {
+    max-width: 400px;
+  }
+
+  .gammer-information h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .video-card p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .videos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .featured-img {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .featured-img {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .featured {
+    flex-direction: column;
+  }
+
+  .featured-img {
+    position: relative;
+    right: 20%;
+  }
+}
+@media screen and (max-width: 825px) {
+  .featured {
+    flex-direction: column;
+  }
+
+  .featured-img-1 {
+    width: 300px;
+  }
+  .featured-img-2 {
+    width: 100px;
+  }
+
+  .featured-img {
+    margin-left: 220px;
+  }
+
+  .featured-overlay {
+    position: absolute;
+    bottom: -30px;
+    left: -50px;
+  }
+}
+@media screen and (max-width: 825px) {
+  .featured-img {
+    margin-left: 90px;
+  }
+
+  .featured-title h1 {
+    font-size: 40px;
+  }
 }
