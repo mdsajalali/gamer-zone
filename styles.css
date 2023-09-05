@@ -527,7 +527,7 @@ header {
     rgba(255, 66, 165, 0.03) 87.94%
   );
   margin-top: 100px;
-   padding: 50px 0;
+  padding: 50px 0;
 }
 
 .category-content {
@@ -561,6 +561,12 @@ header {
   border: 1.5px solid var(--Linear, #ff42a5);
 }
 
+.category-card p {
+  color: #0b0223;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .category-card:hover p {
   color: #ff42a5;
 }
@@ -568,4 +574,81 @@ header {
 .category-card img {
   width: 60px;
   height: 60px;
+}
+
+/* footer section */
+.footer {
+  padding: 80px 10px;
+  background: #0B0223;
+  text-align: center;
+}
+
+.footer--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+ 
+.footer-logo{
+  color: #fff;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-logo span{
+     color: #ff42a5;
+}
+
+.footer--menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer--menu--link {
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.footer--menu--link:hover{
+     color: #ff42a5;
+
+}
+
+.footer--social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer--social--link {
+  color: #fff;
+  font-size: 30px;
+}
+
+.footer--nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer--nav--link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer--copyright {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 30px;
+  line-height: 1.6;
 }
