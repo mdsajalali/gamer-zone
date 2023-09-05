@@ -2,7 +2,7 @@
 
 ## Programming Hero Assignment-02
 
-> Gamer Zone website
+> Responsive Gamer Zone website
 
 #### Live Link: [Gamer Zone](https://mdsajalali.github.io/gamer-zone/)
 
